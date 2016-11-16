@@ -1,0 +1,48 @@
+
+owly.png
+size: 256,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+owl-bits/owl-beak
+  rotate: false
+  xy: 184, 158
+  size: 16, 23
+  orig: 16, 23
+  offset: 0, 0
+  index: -1
+owl-bits/owl-body
+  rotate: false
+  xy: 2, 52
+  size: 180, 191
+  orig: 180, 191
+  offset: 0, 0
+  index: -1
+owl-bits/owl-eye
+  rotate: false
+  xy: 64, 2
+  size: 48, 48
+  orig: 48, 48
+  offset: 0, 0
+  index: -1
+owl-bits/owl-eye-blink
+  rotate: false
+  xy: 114, 2
+  size: 48, 48
+  orig: 48, 48
+  offset: 0, 0
+  index: -1
+owl-bits/owl-wing
+  rotate: true
+  xy: 2, 4
+  size: 46, 60
+  orig: 46, 60
+  offset: 0, 0
+  index: -1
+owl-bits/owl-wing-right
+  rotate: false
+  xy: 184, 183
+  size: 46, 60
+  orig: 46, 60
+  offset: 0, 0
+  index: -1

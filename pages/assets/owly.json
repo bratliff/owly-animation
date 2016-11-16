@@ -1,0 +1,111 @@
+{
+"skeleton": { "hash": "FmK+MTSSwbQmk3zC8o9m5eGjkFw", "spine": "3.5.18", "width": 182, "height": 191 },
+"bones": [
+	{ "name": "root" },
+	{ "name": "left eye", "parent": "root", "length": 12.77, "rotation": -153.43, "x": -25.78, "y": 134.94 },
+	{ "name": "left wing", "parent": "root", "length": 58.2, "rotation": -126.53, "x": -53.93, "y": 102.17 },
+	{ "name": "right eye", "parent": "root", "length": 13.72, "rotation": -38.66, "x": 29.91, "y": 136.37 },
+	{ "name": "right wind", "parent": "root", "length": 54.23, "rotation": -51.48, "x": 43.93, "y": 101.3 }
+],
+"slots": [
+	{ "name": "owl-bits/owl-body", "bone": "root", "attachment": "owl-bits/owl-body" },
+	{ "name": "owl-bits/owl-beak", "bone": "root", "attachment": "owl-bits/owl-beak" },
+	{ "name": "owl-bits/owl-wing", "bone": "left wing", "attachment": "owl-bits/owl-wing" },
+	{ "name": "owl-bits/owl-wing-right", "bone": "right wind", "attachment": "owl-bits/owl-wing-right" },
+	{ "name": "owl-bits/owl-eye", "bone": "left eye", "attachment": "owl-bits/owl-eye" },
+	{ "name": "owl-bits/owl-eye2", "bone": "right eye", "attachment": "owl-bits/owl-eye" }
+],
+"skins": {
+	"default": {
+		"owl-bits/owl-beak": {
+			"owl-bits/owl-beak": { "x": -2.5, "y": 113, "width": 16, "height": 23 }
+		},
+		"owl-bits/owl-body": {
+			"owl-bits/owl-body": { "x": -0.5, "y": 97, "width": 180, "height": 191 }
+		},
+		"owl-bits/owl-eye": {
+			"owl-bits/owl-eye": { "x": 0.32, "y": -5.75, "rotation": 148.12, "width": 48, "height": 48 }
+		},
+		"owl-bits/owl-eye2": {
+			"owl-bits/owl-eye": { "x": -5.46, "y": 1.12, "rotation": 38.66, "width": 48, "height": 48 },
+			"owl-bits/owl-eye-blink": { "rotation": 36.34, "width": 48, "height": 48 }
+		},
+		"owl-bits/owl-wing": {
+			"owl-bits/owl-wing": { "x": 25.47, "y": -0.51, "rotation": 126.53, "width": 46, "height": 60 }
+		},
+		"owl-bits/owl-wing-right": {
+			"owl-bits/owl-wing-right": { "x": 26.07, "y": -2.81, "rotation": 51.48, "width": 46, "height": 60 }
+		}
+	}
+},
+"animations": {
+	"flapwings": {
+		"bones": {
+			"left wing": {
+				"rotate": [
+					{ "time": 0, "angle": 0 },
+					{ "time": 0.1, "angle": 286.11 },
+					{ "time": 0.2, "angle": 0 }
+				]
+			},
+			"right wind": {
+				"rotate": [
+					{ "time": 0, "angle": 0 },
+					{ "time": 0.1, "angle": 76.37 },
+					{ "time": 0.2, "angle": 0 }
+				]
+			}
+		}
+	},
+	"look left": {
+		"bones": {
+			"right eye": {
+				"rotate": [
+					{ "time": 0, "angle": 0 },
+					{ "time": 0.3333, "angle": -115.58 },
+					{ "time": 0.6667, "angle": 0 }
+				],
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0 },
+					{ "time": 0.3333, "x": -5, "y": 0 },
+					{ "time": 0.6667, "x": 0, "y": 0 }
+				]
+			},
+			"left eye": {
+				"rotate": [
+					{ "time": 0, "angle": 0 },
+					{ "time": 0.3333, "angle": 219.41 },
+					{ "time": 0.6667, "angle": 0 }
+				],
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0 },
+					{ "time": 0.3333, "x": -6.63, "y": 5.31 },
+					{ "time": 0.6667, "x": 0, "y": 0 }
+				]
+			},
+			"right wind": {
+				"rotate": [
+					{ "time": 0.6667, "angle": 0 }
+				]
+			}
+		}
+	},
+	"wink": {
+		"slots": {
+			"owl-bits/owl-eye2": {
+				"attachment": [
+					{ "time": 0.0667, "name": "owl-bits/owl-eye-blink" },
+					{ "time": 0.4667, "name": "owl-bits/owl-eye" }
+				]
+			}
+		},
+		"bones": {
+			"right eye": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0 }
+				]
+			}
+		}
+	}
+}
+}
