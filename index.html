@@ -180,43 +180,6 @@
 
 <script src="js/spine-widget.js"></script>
 
-<script>
-/**$(document).ready(function(){
-    function initButton(owly) {
-        $('.sound-button-select').click(function(){
-            owly.state.setAnimation(0, "flapwings", false);
-        });
-        $('.ok-button').click(function(){
-            owly.state.setAnimation(0, "flapwings", true);
-        });
-    };
-    new spine.SpineWidget("spine-widget", {
-        json: "assets/owly.json",
-        atlas: "assets/owly.atlas",
-        loop: false,
-        animation: "wink",
-        backgroundColor: "#ffffff",
-        debug: true,
-        success: function (widget) {
-            var owly = widget;
-            var animIndex = 0;
-            initButton(owly);
-            owly.state.setAnimation(0, "wink", false);
-            //let flapwings = widget.skeleton.data.flapwings;
-            //widget.setAnimation(flapwings.name);
-            widget.canvas.onclick = function () {
-                animIndex++;
-                let animations = widget.skeleton.data.animations;
-                if (animIndex >= animations.length) animIndex = 0;
-                widget.setAnimation(animations[animIndex].name);
-
-            }
-        }
-    });
-
-});**/
-
-</script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js'></script>
     <script src='js/animation-events.js'></script>
 
