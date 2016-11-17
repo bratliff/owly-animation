@@ -1,7 +1,5 @@
 
-
 var owlAnim = {
-    _this : this,
     owly : $('.owly'),
     bgarray : ['owly','assessment-window','clouds','mountains','trees','tree','grass1','grass2'],
     owlyFly : function(el, owlWidget, array) {
@@ -36,7 +34,6 @@ var owlAnim = {
         var that = this;
         $('.ok-button').click(function(){
             that.owlyFly(that.owly, owlWidget, that.bgarray);
-
         });
         $('.sound-button-select').click(function(){
             owlWidget.state.setAnimation(0, "flapwings", false);
@@ -57,14 +54,6 @@ $(document).ready(function(){
             var animIndex = 0;
             owlAnim.init(owlWidget);
             owlWidget.state.setAnimation(0, "look left", false);
-
-            widget.canvas.onclick = function () {
-                animIndex++;
-                let animations = widget.skeleton.data.animations;
-                if (animIndex >= animations.length) animIndex = 0;
-                widget.setAnimation(animations[animIndex].name);
-
-            }
         }
     });
 });
