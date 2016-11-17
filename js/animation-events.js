@@ -20,7 +20,6 @@ var owlAnim = {
             .add(function() {
                 owlWidget.state.setAnimation(0, "wink", false);
             });
-
         };
     },
     transition : function(array, owlWidget){
