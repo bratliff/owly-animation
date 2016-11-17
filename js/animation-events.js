@@ -41,18 +41,19 @@ var owlAnim = {
 }
 
 $(document).ready(function(){
-    /*new spine.SpineWidget("owly", {
+    new spine.SpineWidget("spine-widget", {
         json: "assets/owly.json",
         atlas: "assets/owly.atlas",
-        loop: false,
+        loop: true,
         animation: "flapwings",
-        backgroundColor: "#ffffff",
-        debug: true,
+        alpha: true,
+        backgroundColor: alpha=0,
         success: function (widget) {
             var owlWidget = widget;
             var animIndex = 0;
             owlAnim.init(owlWidget);
             owlWidget.state.setAnimation(0, "look left", false);
         }
-    });*/
+    });
+
 });
