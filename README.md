@@ -4,7 +4,7 @@ An animation using Greensock, CSS and Spine
 #dependencies
 
 - Greensock Tweenmax for flying animations  
-http://greensock.com/
+http://greensock.com
 
 - Spine for Owly's movements  
 http://esotericsoftware.com
