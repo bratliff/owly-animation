@@ -10,3 +10,7 @@ http://greensock.com
 http://esotericsoftware.com
 
 - CSS animations for landscape movements
+
+# to view
+
+Run `python -m SimpleHTTPServer` in the root directory
