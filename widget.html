@@ -14,7 +14,6 @@
     <!-- jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <!-- /jquery -->
-    <script src="js/spine-widget.js"></script>
 
 </head>
 <body>
@@ -29,13 +28,10 @@
 	    </div>
 	</nav>
     <div class="assessment-wrapper">
-
     <div class="assessment-window">
-        <div id="owly">
-            <div style="margin-bottom: 20px; width: 150px; height: 150px;" class="spine-widget" data-json="assets/owly.json" data-atlas="assets/owly.atlas" data-animation="flapwings" data-fit-to-canvas="true"></div>
+        <div class="owly">
+            <div id="spine-widget" style="margin-bottom: 20px; width: 200px; height: 300px; background: #ffffff" data-json="assets/owly.json" data-atlas="assets/owly.atlas" data-animation="look left"></div>
         </div>
-            <!-- <div id="spine-widget" style="margin-bottom: 20px; width: 200px; height: 300px; background: #ffffff" data-json="assets/owly.json" data-atlas="assets/owly.atlas" data-animation="look left"></div> -->
-
 
         <div class="measure-upper">
             <div class="speaker-animation">
@@ -181,6 +177,8 @@
         </svg>
     </div>
 </div>
+
+     <script src="js/spine-widget.js"></script>
 
     <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js'></script>
     <script src='js/animation-events.js'></script>
