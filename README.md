@@ -1,7 +1,7 @@
-# owly-animation
+# owly animation
 An animation using Greensock, CSS and Spine
 
-#dependencies
+# dependencies
 
 - Greensock Tweenmax for flying animations  
 http://greensock.com
