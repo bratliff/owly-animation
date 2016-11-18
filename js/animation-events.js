@@ -18,7 +18,7 @@ var owlAnim = {
             tl.to(el, 0.3, {rotation:0, x:2100, y:-400})
             tl.to(el, 0.8, {x:2100, y:0})
             .add(function() {
-                owlWidget.state.setAnimation(0, "wink", false);
+                owlWidget.state.setAnimation(0, "look left", false);
             });
 
         };
@@ -33,7 +33,15 @@ var owlAnim = {
     init : function(owlWidget) {
         var that = this;
         $('.ok-button').click(function(){
-            that.owlyFly(that.owly, owlWidget, that.bgarray);
+            owlWidget.state.setAnimation(0, "flapwings", false);
+            $('.speech-bubble').show(500, function(){
+                owlWidget.state.setAnimation(0, "wink", false);
+                $('.speech-bubble').delay(1000).hide(500, function(){
+                    that.owlyFly(that.owly, owlWidget, that.bgarray);
+                });
+            });
+
+
         });
         $('.sound-button-select').click(function(){
             owlWidget.state.setAnimation(0, "flapwings", false);
@@ -43,17 +51,16 @@ var owlAnim = {
 
 $(document).ready(function(){
     new spine.SpineWidget("spine-widget", {
-        json: "assets/owly.json",
-        atlas: "assets/owly.atlas",
+    	json: "assets/owly.json",
+    	atlas: "assets/owly.atlas",
+    	animation: "flapwings",
         loop: false,
-        animation: "wink",
-        backgroundColor: "#ffffff",
-        debug: true,
-        success: function (widget) {
-            var owlWidget = widget;
-            var animIndex = 0;
-            owlAnim.init(owlWidget);
+        alpha: true,
+    	backgroundColor: "#00000000",
+    	success: function (widget) {
+            owlWidget = widget;
             owlWidget.state.setAnimation(0, "look left", false);
-        }
+    		owlAnim.init(owlWidget);
+    	}
     });
 });
