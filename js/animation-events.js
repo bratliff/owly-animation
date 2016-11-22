@@ -50,27 +50,13 @@ var owlAnim = {
 
 $(document).ready(function(){
     new spine.SpineWidget("spine-widget", {
-<<<<<<< HEAD
-        json: "assets/owly.json",
-        atlas: "assets/owly.atlas",
-        loop: true,
-        animation: "flapwings",
-        alpha: true,
-        backgroundColor: alpha=0,
-        success: function (widget) {
-            var owlWidget = widget;
-            var animIndex = 0;
-            owlAnim.init(owlWidget);
-=======
     	json: "assets/owly.json",
     	atlas: "assets/owly.atlas",
     	animation: "flapwings",
-        loop: false,
-        alpha: true,
+        alpha:true,
     	backgroundColor: "#00000000",
     	success: function (widget) {
             owlWidget = widget;
->>>>>>> 2c0a5f18ce2b93705d2ce8d987d6bff54510f00b
             owlWidget.state.setAnimation(0, "look left", false);
     		owlAnim.init(owlWidget);
     	}
